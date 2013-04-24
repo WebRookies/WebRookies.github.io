@@ -1,0 +1,21 @@
+/*
+Errno::ENOENT: No such file or directory - css/style.scss
+
+Backtrace:
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/lib/sass/plugin/compiler.rb:339:in `read'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/lib/sass/plugin/compiler.rb:201:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/lib/sass/plugin/compiler.rb:299:in `block in watch'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - css/style.scss"; }
