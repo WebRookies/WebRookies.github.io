@@ -1,39 +1,50 @@
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - css/style.scss"; }
 body {
   background: #DBD9D4;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font: {
+    family: Helvetica, Arial, sans-serif;
+    size: 16px;
+  }
   margin: 0;
-  padding: 30px; }
-  body .container-fluid {
+  padding: 30px;
+
+  .container-fluid {
     position: absolute;
     display: block;
     background: #f9f9f9;
     top: 30px;
     right: 30px;
     bottom: 30px;
-    left: 30px; }
-  body h1 {
+    left: 30px;
+  }
+
+  h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -29px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: -155px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3em;
-    font-weight: 300;
-    text-align: center;
+    margin: {
+      top: -29px;
+      right: 0;
+      bottom: 0;
+      left: -155px;
+    }
+    font: {
+      family: 'Quicksand', sans-serif;
+      size: 3em;
+      weight: 300;
+    }
+    text: {
+      align: center;
+    }
     -moz-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear; }
-    body h1:hover {
-      text-shadow: 2px 2px #ccc; }
-  body .squares {
+    transition: all 0.2s linear;
+
+    &:hover {
+      text-shadow: 2px 2px #ccc;
+    }
+  }
+
+  .squares {
     position: absolute;
     height: 350px;
     width: 350px;
@@ -43,9 +54,12 @@ body {
     border-radius: 6px;
     left: 50%;
     top: 50%;
-    margin-top: -175px;
-    margin-left: -175px; }
-    body .squares:before {
+    margin: {
+      top: -175px;
+      left: -175px;
+    }
+
+    &:before {
       content: "";
       position: absolute;
       border: 2px solid #408EF8;
@@ -59,8 +73,10 @@ body {
       transform-origin: center center;
       -moz-transform: rotate(-120deg);
       -webkit-transform: rotate(-120deg);
-      transform: rotate(-120deg); }
-    body .squares:after {
+      transform: rotate(-120deg);
+    }
+
+    &:after {
       content: "";
       position: absolute;
       border: 2px solid #DB4438;
@@ -74,5 +90,7 @@ body {
       transform-origin: center center;
       -moz-transform: rotate(120deg);
       -webkit-transform: rotate(120deg);
-      transform: rotate(120deg); }
+      transform: rotate(120deg);
     }
+  }
+}
