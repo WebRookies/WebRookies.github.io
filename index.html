@@ -4,9 +4,34 @@
   <meta charset=utf-8 />
   <title>Web Rookies Unite!</title>
   <link href="http://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/flat-ui.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 
+  <script type="text/x-handlebars" data-template-name="index">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="navbar navbar-fixed-top navbar-inverse">
+          <div class="navbar-inner">
+            <div class="container">
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li>{{#linkTo 'tutorials'}}Tutorials{{/linkTo}}</li>
+                  <li><a href="http://meetup.webrookies.org">Meetup</a></li>
+                  <li>{{#linkTo 'posts'}}Blog{{/linkTo}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="squares"></div>
+        <h1 class="text-center">{{appName}}</h1>
+      </div>
+    </div>
+  </script>
+  
   <script src="js/libs/jquery-1.9.1.js"></script>
   <script src="js/libs/handlebars-1.0.0-rc.3.js"></script>
   <script src="js/libs/ember-1.0.0-rc.1.js"></script>
@@ -14,17 +39,5 @@
   <script src="js/libs/moment.js"></script>
   <script src="js/libs/showdown.js"></script>
   <script src="js/app/app.js"></script>
-</head>
-<body>
-
-  <script type="text/x-handlebars" data-template-name="index">
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="squares"></div>
-        <h1 class="text-center">Web Rookies</h1>
-      </div>
-    </div>
-  </script>
-  
 </body>
 </html>
